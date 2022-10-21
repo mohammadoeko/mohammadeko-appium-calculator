@@ -33,8 +33,8 @@ public class Multiply {
         three.click();
         System.out.println("Clik angka 3");
 
-        WebElement plus = driver.findElement(By.id("com.android.calculator2:id/op_mul"));
-        plus.click();
+        WebElement multiply = driver.findElement(By.id("com.android.calculator2:id/op_mul"));
+        multiply.click();
         System.out.println("Click perkalian");
 
         WebElement four = driver.findElement(By.id("com.android.calculator2:id/digit_4"));
