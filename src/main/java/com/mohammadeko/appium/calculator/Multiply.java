@@ -19,7 +19,7 @@ public class Multiply {
 
         dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
 
-        dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.7.1");
+        dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
 
         dc.setCapability("appPackage", "com.android.calculator2");
 
