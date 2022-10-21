@@ -32,12 +32,6 @@ public class Add {
 
         AndroidDriver driver = new AndroidDriver(url, dc);
 
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
         WebElement one = driver.findElement(By.id("com.android.calculator2:id/digit_1"));
         one.click();
         System.out.println("Click angka 1");
@@ -63,6 +57,12 @@ public class Add {
         else
         {
             System.out.println("Test Failed...");
+        }
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
 
         driver.quit();

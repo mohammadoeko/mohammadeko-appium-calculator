@@ -29,12 +29,6 @@ public class Multiply {
 
         AndroidDriver driver = new AndroidDriver(url, dc);
 
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-
         WebElement three = driver.findElement(By.id("com.android.calculator2:id/digit_3"));
         three.click();
         System.out.println("Clik angka 3");
@@ -60,6 +54,12 @@ public class Multiply {
         else
         {
             System.out.println("Test Failed...");
+        }
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
 
         driver.quit();
